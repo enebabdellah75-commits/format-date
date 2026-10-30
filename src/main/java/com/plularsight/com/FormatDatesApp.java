@@ -2,6 +2,8 @@ package com.plularsight.com;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.time.ZonedDateTime;
+import java.time.ZoneOffset;
 
 public class FormatDatesApp {
     public static void main(String[] args) {
@@ -39,6 +41,19 @@ public class FormatDatesApp {
 
         // Display the formatted date
         System.out.println(formattedDate3);
+
+        // Get the current date and time in GMT
+        ZonedDateTime gmtTime = ZonedDateTime.now(ZoneOffset.UTC);
+
+        // Format the date and time
+        DateTimeFormatter formatter4 =
+                DateTimeFormatter.ofPattern("EEEE, MMM dd, yyyy HH:mm");
+
+         // Convert the date and time into the desired format
+        String formattedGMT = gmtTime.format(formatter4);
+
+        // Display the GMT date and time
+        System.out.println(formattedGMT);
 
 
 
