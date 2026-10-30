@@ -12,6 +12,12 @@ public class FormatDatesApp {
         // Display the current date and time
         System.out.println(today);
 
+        // Format the date as MM/dd/yyyy
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+
+        // Convert the date into the desired format
+        String formattedDate = today.format(formatter);
+
 
 
     }
