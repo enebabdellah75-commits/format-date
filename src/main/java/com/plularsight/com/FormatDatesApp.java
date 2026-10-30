@@ -21,6 +21,15 @@ public class FormatDatesApp {
         // Display the formatted date
         System.out.println(formattedDate);
 
+        // Format the date as yyyy-MM-dd
+        DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+
+        // Convert the date into the desired format
+        String formattedDate2 = today.format(formatter2);
+
+         // Display the formatted date
+        System.out.println(formattedDate2);
+
 
 
     }
