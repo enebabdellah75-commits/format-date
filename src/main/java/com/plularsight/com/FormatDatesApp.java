@@ -18,6 +18,9 @@ public class FormatDatesApp {
         // Convert the date into the desired format
         String formattedDate = today.format(formatter);
 
+        // Display the formatted date
+        System.out.println(formattedDate);
+
 
 
     }
