@@ -30,6 +30,16 @@ public class FormatDatesApp {
          // Display the formatted date
         System.out.println(formattedDate2);
 
+        // Format the date with the full weekday and month names
+        DateTimeFormatter formatter3 =
+                DateTimeFormatter.ofPattern("EEEE, MMMM dd, yyyy");
+
+        // Convert the date into the desired format
+        String formattedDate3 = today.format(formatter3);
+
+        // Display the formatted date
+        System.out.println(formattedDate3);
+
 
 
     }
